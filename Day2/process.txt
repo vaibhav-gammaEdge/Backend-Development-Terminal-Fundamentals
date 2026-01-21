@@ -60,3 +60,5 @@ Run multiple environments
 env variable  is a key value pair in the os that python program can run at runtime
 
 Path tells the os that where to find the executable files
+
+ 
