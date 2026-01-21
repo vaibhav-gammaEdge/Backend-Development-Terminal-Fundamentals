@@ -1,0 +1,79 @@
+ The frontend delivers the user interface, while the backend ensures the data, logic, 
+and functionality run smoothly
+ data processing, APIs, and managing complex business logic, backend development is more critical.
+Interact with clients.
+. A framework is a pre-written code library that helps with common tasks and basic features on many websites. 
+
+Back-end developers enable the front end to function by providing data storage and power. As a back-end developer, you build, test, maintain, and debug the technology that makes the software or website function.
+Ensure functionality.
+
+
+client server architecture
+
+in a client server architecture 
+client sends a request to a server and server responds with the help of http protocols
+basically server act as a centralised controller which manages the working for client
+
+
+client-server increase the modularity  by acting as a independent service each part like client server database act as a independent service
+
+we can increase the scalibilty by two types one is horizontal scalability in which we add more servers to handle the load
+second one is vertical scalabilty by upgrading the server hardware such as memory storage and cpu
+
+Client: Initiates requests to the server, typically in response to user actions or inputs.
+Server: Responds to client requests, performing required processing and returning results.
+Networking Protocols: These define rules and formats for communication between clients and servers. Examples include HTTP/HTTPS for web applications, TCP/IP for general network communication, and WebSocket for real-time applications.
+
+protocol :They ensure that data is transmitted in a secure, reliable, and understood manner
+how data flows
+
+Types of Client-Server Architecture
+Two-Tier Architecture: The simplest form where clients and servers communicate directly.
+Three-Tier Architecture: A middleware layer, often called the application layer, is added between the client and server.
+N-Tier Architecture: Involves multiple intermediary layers, such as security and business logic, to manage complex data processing and ensure security.
+
+The Server Receives and Processes the Request: The server listens on a specific port and handles incoming requests. It processes the data, runs logic, queries a database if needed, and prepares a response.
+
+The Server Sends Back a Response: Once processing is done, the server sends the result back. This could be:
+
+A webpage
+
+Search results
+
+A confirmation message
+
+JSON data for a mobile app
+
+The Client Displays the Response: The client receives the response and renders it on screen. What you see in your browser or app is the result of this back-and-forth.
+
+Computers connected to the internet are called clients and servers
+
+Tier Name 	Also Known As	Function	Common Technologies
+Presentation Tier	Client Tier, User Interface	The user interface (UI) where end-users interact with the application. It displays information and collects user input.	HTML, CSS, JavaScript, React, Angular, iOS/Android apps
+Application Tier	Logic Tier, Business Tier, Middleware	The "brain" of the application. It processes user requests, executes business logic, and acts as an intermediary between the presentation and data tiers.	Python, Java, PHP, Ruby, Node.js running on an application server
+Data Tier	Database Tier, Back-end	Responsible for data storage, retrieval, and management. It ensures data integrity and security.	MySQL, PostgreSQL, Oracle, MongoDB, Microsoft SQL Serve
+
+This SYN → SYN-ACK → ACK exchange ensures both sides agree to communicate and are synchronized. After the handshake, a TCP socket connection is open. (If using HTTPS, an additional TLS/SSL handshake secures the connection after TCP.)
+
+The IP layer handles routing these packets across the network to reach the correct server.
+
+While HTTP defines the content of the messages, the actual data is transmitted over the internet as packets.
+
+When an HTTP request or response is sent, it is broken into segments by TCP, then encapsulated into IP packets for transmission.
+
+Each packet has a header (with source/destination IP, protocol, and sequence number) and a portion of the payload (the HTTP data).
+
+These packets travel through routers to reach the destination. Packets may arrive out of order, but TCP reorders them using sequence numbers to reconstruct the original message.
+
+TCP also ensures reliability: for each packet received, the receiver sends an ACK; if an ACK isn’t received for a packet, the sender retransmits that packet.
+
+Even if some packets are lost, TCP’s retransmission mechanism guarantees the complete data will arrive. Once all the packets of a request reach the server, they are reassembled into the full message.
+
+The server then generates a response, which is sent back in the same segmented way. After the exchange, the TCP connection is closed (unless kept alive for reuse).
+
+From a simple URL to a rendered webpage, a lot happens under the hood. DNS finds the server’s address, TCP/IP establishes a reliable connection via a handshake, and HTTP handles the request/response transfer of data — all of this through packets moving across the network.
+
+Understanding these layers helps developers troubleshoot issues and optimize web performance.
+
+API versioning is a agreement between the client and consumer 
+
