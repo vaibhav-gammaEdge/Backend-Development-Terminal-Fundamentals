@@ -1,0 +1,63 @@
+pwd 
+show current directory
+
+ls
+list files and folders
+
+ls -l
+ls  -a
+ls -lh
+
+mkdir  
+create directory
+
+mkdir foldername
+mkdir -p parent/child/grandchild
+
+cd 
+changing the directory
+cd foldername
+cd ..      # go back one level
+cd ~       # home directory
+cd /       # root directory
+
+rmdir foldername
+remove empty directory only
+
+rm -r foldername          # directory with contents
+
+
+touch  
+used to create files
+
+touch file1_name
+
+touch path/file_name
+view file content
+cat file.txt
+less file.txt
+more file.txt
+
+copy
+cp source.txt destination.txt
+cp file.txt /path/to/folder/
+
+copy directory
+cp -r folder1 folder2
+
+recursive followw 
+delete
+rm file.txt
+rm -i file.txt      # confirm before deleting
+rm -f file.txt      # force delete
+
+finding any file
+find /path -name file.txt
+
+
+Check file type
+file filename
+
+rm *.txt
+ls -R shows all files with directory
+

@@ -1,0 +1,36 @@
+TERMINAL
+it a programe which gives us CLI(command line interface) which 
+helps us to interact with computer through commands
+A terminal refers to a wrapper program which runs a shell. 
+The shell is the program which actually processes commands and returns output. 
+Shell: A command-line interpreter that translates 
+user commands into actions performed by the operating system.
+Root->User->home
+
+/Users/WebDev. A synonym for the /Users/WebDev path is ~ when you are logged in as WebDev
+
+cd - Change directory  
+used to Change the directory
+
+Path-way to reach a file or folder; 
+cd Desktop – relative to where I am currently
+cd /Users/WebDev/Desktop – absolute, starting from the root
+ (first /, then Users, then WebDev, then Desktop)
+ /  -> root directory
+ ~ -> home directory
+  Linux
+  the operating system manages the communication between 
+  your software and your hardware. Without the operating system (OS), the software wouldn’t function.
+
+  Linux is an open-source, community-developed operating system
+   with the kernel at its core, alongside other tools, applications, and services.
+
+The kernel interfaces the operating system and the underlying 
+hardware and facilitates communication between the two.
+
+Process Management – The kernel manages running processes in order to avoid conflicts and deadlocks 
+and also for the optimal functioning of the system.
+
+SYSTEM CALL ACT AS A GATEWAY BETWEEN THE USER MODE AND THE KERNAL MODE
+A system call is a controlled entry point that allows a user program to 
+request a service from the operating system

@@ -1,0 +1,62 @@
+process and port management
+
+process
+al running programmes on computer
+ps-  alll running processes in the system
+
+ps aux
+
+
+top- shows cpu usage,memory usage,pid
+every process has pid
+
+kill PID 
+kil -9 PID(force)
+
+pkill processname(kill by processname )
+
+kilall node(kill all instances)
+
+
+
+PORT 
+a number that allow network communication
+
+lsof -i:5000
+which process is using this portlls
+
+lsof -i: show all open ports
+Identifying Services: A backend developer assigns specific
+ ports to distinct services to avoid collisions
+
+
+a port is a network endpoint that allows communication
+process listen on ports
+HTTP: 80
+
+HTTPS: 443
+
+Node.js dev: 3000
+
+Spring Boot: 8080
+
+PostgreSQL: 5432
+
+Redis: 6379
+
+Ports allow multiple services to share the same IP.
+
+Backend developers use ports to:
+
+Expose APIs
+
+Communicate between services
+
+Connect to databases and caches
+
+Run multiple environments
+
+
+env variable  is a key value pair in the os that python program can run at runtime
+
+Path tells the os that where to find the executable files
