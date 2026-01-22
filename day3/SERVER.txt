@@ -1,0 +1,33 @@
+SERVER
+SERVER  IS A COMUPUTER OR PROGRAME THAT PROVIDE DATA ,RESOURCES,SERVICES TO CLIENTS
+OVER A NETWORK  
+SERVER SHARE RESOURCES WITH CLIENT
+
+AN INDIVISUAL SYSTEM CAN BE BOTH SERVER AND CLIENT
+
+ servers were often single, powerful computers connected over a network to a set of
+  less-powerful client computers. This network architecture is often referred to as 
+  the client-server model, in which both the client computer and 
+ the server possess computing power, but certain tasks are delegated to servers
+
+ Receives requests (from browser or app)
+ Applies business logic (“rules”)
+ Talks to databases
+talks to other servers (payment, email, maps)
+Sends responses back
+
+ANY COMPUTER CAN ACT AS AS SERVER IF IT IS CONFIGURED TO LISTEN REQUEST AND TO PROVIDE RESOURCES
+
+WEB SERVER
+
+ACCEPY HTTP REQUEST AND RETURN WEB PAGES
+APACHE ,NGINX
+
+DATABASE SERVER
+STORE RETRIVE,ORGANIZE STRUCTURED DATA
+WEB SERVER--> DATABASE SERVER
+
+MAIL SERVER
+DIGITAL POST OFFICE OF MAIL 
+USES SMTP TO SEND MAIL
+USES IMAP/POP TO Receives MAIL

@@ -1,4 +1,4 @@
-import requests 
+import requests
 
 url = "https://api.github.com/repos/vaibhav-gammaEdge/Backend-Development-Terminal-Fundamentals"
 
