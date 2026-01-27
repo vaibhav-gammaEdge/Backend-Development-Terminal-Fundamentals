@@ -1,0 +1,68 @@
+Database
+
+DATABASE IS A ORGANSIZED,ELECTRONIC COLLECTION OF INFORMATION AND DATABASE
+IT ACT AS A CENTRAL REPOSITORY WHERE DATA IS STORED ,RETRIVE,MANIPULATED AND ANALYZED
+
+
+DATA
+The raw facts and figures stored in the system
+
+DBMS
+DATABASE MANAGEMENT SYSTEM IT ACT AS A INTERFACE BETWEEN DATABASE AND A CLIENT (END USER OR APPLICATION)
+
+IT HELPS TO INTERACT WITH DATABASE BY VARIOUS MEANS LIKE   
+IT manages core operations like security, data storage, retrieval, and updates
+
+
+DATABASE ACCESS LANGUAGE
+
+USED TO INTERACT BETWEEN DATABSE 
+
+Structured Query Language (SQL) i
+the standard language for relational 
+databases, used for defining, manipulating, and querying data.
+
+Schema: The blueprint or structure that defines how data is organized, including tables, columns, 
+data types, and relationships between data points. 
+
+Database languages, commonly referred to as query languages, are a type of programming l
+anguage that programmers use to define and access data. Within the database management 
+system(DBMS), these languages enable users to perform tasks such as: 
+
+Restricting data access
+Defining and modifying data
+Searching for information.  
+organisations use specialised database software to avert such unfortunate events.
+Step 1: Identify entities
+
+E.g., Users, Orders, Products, Categories
+
+Step 2: Identify relationships
+
+E.g., User has many Orders → 1:N
+
+Step 3: Identify attributes
+
+User: id, name, email
+
+Order: id, user_id, total_amount, status
+
+Step 4: Assign primary & foreign keys
+
+User: id PK
+
+Order: user_id FK → User(id)
+
+Step 5: Apply constraints
+
+Email: UNIQUE, NOT NULL
+
+Order amount: CHECK(amount > 0)
+
+Step 6: Index hot paths
+
+Search queries → index columns (email, status)
+
+Step 7: Optimize for queries
+
+Consider denormalization, caching, or partitions for high-traffic tables

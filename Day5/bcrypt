@@ -1,0 +1,31 @@
+from argon2 import PasswordHasher 
+import bcrypt
+
+password = "VAIBHAW2906"
+password_bytes = password.encode()
+
+# ---------------- ARGON2 ----------------
+argon2Hasher = PasswordHasher(
+    time_cost=3,
+    memory_cost=64 * 1024,  # 64 MB
+    parallelism=1,
+    hash_len=32,
+    salt_len=16
+)
+
+argon2_hash = argon2Hasher.hash(password)
+
+argon2_ok = argon2Hasher.verify(argon2_hash, password)
+
+print("Argon2 hash:")
+print(argon2_hash)
+print("Argon2 verify:", argon2_ok)
+
+# ---------------- BCRYPT ----------------
+bcrypt_hash = bcrypt.hashpw(password_bytes, bcrypt.gensalt(rounds=12))
+
+bcrypt_ok = bcrypt.checkpw(password_bytes, bcrypt_hash)
+
+print("\nBcrypt hash:")
+print(bcrypt_hash.decode())
+print("Bcrypt verify:", bcrypt_ok)

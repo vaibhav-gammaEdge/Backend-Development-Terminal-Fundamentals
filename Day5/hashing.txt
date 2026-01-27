@@ -1,0 +1,42 @@
+Hashing 
+ It involves transforming a plaintext password into a fixed-length string of characters using a hashing algorithm. This one-way function ensures that even if someone gains unauthorized access to the hashed password, 
+ they cannot easily revert it to the original password.
+
+A key characteristic of password hashing is that the same input will always produce the same output
+
+
+Password hashing is a multi-step process designed to transform plaintext passwords into secure, fixed-length hashes that are difficult to reverse-engineer. Here’s a detailed look at how this process works:
+
+User Creates a Password: When a user registers or updates their password, t
+hey provide a plaintext password. This password is the initial input for the hashing process.
+
+Generating a Salt: To enhance security, a unique salt (a random string of characters) is 
+generated for each password. This random salt ensures that even identical passwords result in different hashes, preventing hackers from using p
+recomputed tables (rainbow tables) to crack hashes.
+
+Hashing the Password: The plaintext password, combined with the salt, 
+is passed through a hashing algorithm such as the bcrypt algorithm,
+ Argon2, or SHA-256. These algorithms perform complex mathematical 
+ operations on the input data to produce a fixed-length hash. 
+ The computational intensity of these algorithms makes it challenging 
+ for hackers to use brute force methods to guess passwords.
+
+Storing the Hash: The resulting hash, along with the salt, is stored in the 
+database. The salt is typically stored alongside the hash, as it is needed for password verification.
+User Login and Password Verification: When a user attempts to log in, t
+hey provide their plaintext password. The system retrieves the stored salt associated with 
+the user’s hash and combines it with the entered password. This combination is then hashed
+ using the same algorithm. If the resulting hash matches the stored hash, the user 
+ is authenticated. This process ensures that the correct password can be verified 
+ without ever needing to store or transmit it in plaintext.
+
+ Rainbow tables are a more computationally efficient (but also more space intensive) 
+ way that hashed passwords can be cracked. In this approach, a rainbow table is
+  created that stores a series of chained hashes for common passwords.
+   The hacker can then use the table as a lookup, to see if the 
+   compromised database password hash exists in the table and then
+  trace that hash chain backwards to identify the original plaintext password.
+Filter input on arrival. At the point where user input is received, filter as strictly as possible based on what is expected or valid input.
+Encode data on output. At the point where user-controllable data is output in HTTP responses, encode the output to prevent it from being interpreted as active content. Depending on the output context, this might require applying combinations of HTML, URL, JavaScript, and CSS encoding.
+Use appropriate response headers. To prevent XSS in HTTP responses that aren't intended to contain any HTML or JavaScript, you can use the Content-Type and X-Content-Type-Options headers to ensure that browsers interpret the responses in the way you intend.
+Content Security Policy. As a last line of defense, you can use Content Security Policy (CSP) to reduce the severity of any XSS vulnerabilities that still occur.
